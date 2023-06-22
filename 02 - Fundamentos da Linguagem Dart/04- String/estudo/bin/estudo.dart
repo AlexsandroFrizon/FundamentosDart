@@ -45,4 +45,63 @@ void main(List<String> arguments) {
   print(VBC.trim());
   print(VBC.trimLeft());
   print(VBC.trimRight());
+
+// Tipo de dados lógicos
+  var boTrue = true;
+  bool boFalse = false;
+  print(boTrue);
+  print(boFalse);
+
+//Negação dos valores lógicos
+  print(!boTrue);
+  print(!boFalse);
+
+//comparção
+  print(boFalse == boFalse);
+  print(boTrue == boFalse);
+
+//Tipos de Dados List
+  List<String> lsString = [];
+  var lsINT = [1, 10, 50];
+  List lsDynamics = [];
+
+  print("Tamanho da lista");
+  print(lsString.length);
+  print(lsINT.length);
+  print(lsDynamics.length);
+
+  print("Adicionar itens na lista");
+  lsString.add("A");
+  lsString.add("B");
+  lsString.add("C");
+  lsINT.add(45);
+  lsDynamics.add("F");
+  lsDynamics.add(10);
+  lsDynamics.add(8.5);
+  lsDynamics.add(true);
+
+  print(lsDynamics);
+  print(lsINT);
+  print(lsString);
+
+  print("Remover valores da lista");
+  lsDynamics.remove(8.5);
+  lsINT.remove(50);
+  lsString.remove("B");
+
+  print(lsDynamics);
+  print(lsINT);
+  print(lsString);
+
+  print("Verifica se lista está vazia");
+  print(lsString.isEmpty);
+  print(lsINT.isNotEmpty);
+
+  print("ver se valor  contem na lista");
+  print(lsINT.contains(45));
+  print(lsString.contains("A"));
+
+  print("função where");
+  print(lsINT);
+  print(lsINT.where((x) => x > 9 && x < 99));
 }
